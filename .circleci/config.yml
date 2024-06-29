@@ -87,15 +87,18 @@ commands:
       - run: ./scripts/ci/common/install-gpg-key.sh
       - run: ./scripts/ci/common/configure-git.sh
 
-  configure_rubygems:
+  configure_release_tools:
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "SHA256:OtpbfVUM/RNu07kUzKsIz9pOP+69Iu258RTam7U0TOg"
       - run: ./scripts/ci/common/configure-rubygems.sh
 
   configure_tools:
     steps:
       - configure_build_tools
       - configure_secrets_tools
-      - configure_rubygems
+      - configure_release_tools
 
 jobs:
   build:
