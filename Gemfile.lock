@@ -39,10 +39,10 @@ GEM
       logger
     faraday-net_http (3.1.0)
       net-http
-    ffi (1.17.1-aarch64-linux-gnu)
+    ffi (1.17.1-aarch64-linux)
     ffi (1.17.1-arm64-darwin)
     ffi (1.17.1-x86_64-darwin)
-    ffi (1.17.1-x86_64-linux-gnu)
+    ffi (1.17.1-x86_64-linux)
     formatador (1.1.0)
     gem-release (2.2.4)
     git (1.19.1)
@@ -207,6 +207,7 @@ PLATFORMS
   arm64-darwin-21
   arm64-darwin-22
   arm64-darwin-23
+  arm64-darwin-25
   x86_64-darwin-19
   x86_64-darwin-20
   x86_64-darwin-21
